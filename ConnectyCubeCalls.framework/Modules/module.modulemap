@@ -1,0 +1,6 @@
+framework module ConnectyCubeCalls {
+  umbrella header "ConnectyCubeCalls.h"
+
+  export *
+  module * { export * }
+}
