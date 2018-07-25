@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallAudioTrack;
 @class CYBCallVideoTrack;
@@ -28,6 +29,7 @@ typedef NS_ENUM(NSUInteger, CYBCallRecorderState) {
     CYBCallRecorderStateFinalizing
 } NS_SWIFT_NAME(CallRecorderState);
 
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallRecorderDelegate)
 @protocol CYBCallRecorderDelegate <NSObject>
 
@@ -45,6 +47,7 @@ NS_SWIFT_NAME(CallRecorderDelegate)
  CYBCallRecorder class interface.
  This class represents webrtc audio/video recorder.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallRecorder)
 @interface CYBCallRecorder : NSObject
 

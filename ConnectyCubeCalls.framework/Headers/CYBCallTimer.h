@@ -7,12 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  Background Timer class used to allow running tasks in background
  call this method when you enter background state.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallTimer)
 @interface CYBCallTimer : NSObject
 

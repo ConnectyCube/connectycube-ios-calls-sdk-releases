@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class CYBCallBitrateTracker;
@@ -15,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallStatsReport class interface.
  This class represents stats for calls.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallStatsReport)
 @interface CYBCallStatsReport : NSObject
 

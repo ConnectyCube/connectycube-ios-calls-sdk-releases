@@ -6,7 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallVideoFormat class interface.
  This class represents format management.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallVideoFormat)
 @interface CYBCallVideoFormat : NSObject <NSCoding>
 

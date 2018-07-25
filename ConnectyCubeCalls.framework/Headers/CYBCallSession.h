@@ -6,6 +6,7 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallBaseSession.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallRecorder;
 
@@ -17,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see CYBCallBaseSession
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallSession)
 @interface CYBCallSession : CYBCallBaseSession
 

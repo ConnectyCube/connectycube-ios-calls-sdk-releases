@@ -6,6 +6,7 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallMediaStreamTrack.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 #import <CoreAudio/CoreAudioTypes.h>
 #import <CoreMedia/CoreMedia.h>
@@ -18,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallAudioTrackSinkInterface protocol.
  Used to sink audio data in real time for a specific audio track.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioTrackSinkInterface)
 @protocol CYBCallAudioTrackSinkInterface <NSObject>
 
@@ -44,6 +46,7 @@ audioStreamDescription:(const AudioStreamBasicDescription)audioStreamDescription
  CYBCallAudioTrack class interface.
  This class represents remote audio track.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioTrack)
 @interface CYBCallAudioTrack : CYBCallMediaStreamTrack
 

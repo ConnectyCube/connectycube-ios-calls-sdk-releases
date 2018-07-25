@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -15,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  byte count is updated, and measures the bitrate based on the byte difference
  over the interval between updates.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallBitrateTracker)
 @interface CYBCallBitrateTracker : NSObject
 

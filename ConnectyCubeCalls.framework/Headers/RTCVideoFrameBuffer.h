@@ -1,5 +1,5 @@
 /*
- *  Copyright 2018 The WebRTC project authors. All Rights Reserved.
+ *  Copyright 2017 The WebRTC project authors. All Rights Reserved.
  *
  *  Use of this source code is governed by a BSD-style license
  *  that can be found in the LICENSE file in the root of the source
@@ -9,12 +9,14 @@
  */
 
 #import <AVFoundation/AVFoundation.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol RTCI420Buffer;
 
 // RTCVideoFrameBuffer is an ObjectiveC version of webrtc::VideoFrameBuffer.
+CYBCALL_EXPORT
 @protocol RTCVideoFrameBuffer <NSObject>
 
 @property(nonatomic, readonly) int width;
@@ -36,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) int strideU;
 @property(nonatomic, readonly) int strideV;
 
+- (instancetype)initWithWidth:(int)width
+                       height:(int)height
+                        dataY:(const uint8_t *)dataY
+                        dataU:(const uint8_t *)dataU
+                        dataV:(const uint8_t *)dataV;
 - (instancetype)initWithWidth:(int)width height:(int)height;
 - (instancetype)initWithWidth:(int)width
                        height:(int)height
@@ -63,11 +70,14 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 /** RTCVideoFrameBuffer containing a CVPixelBufferRef */
+CYBCALL_EXPORT
 @interface RTCCVPixelBuffer : NSObject <RTCVideoFrameBuffer>
 
 @property(nonatomic, readonly) CVPixelBufferRef pixelBuffer;
 @property(nonatomic, readonly) int cropX;
 @property(nonatomic, readonly) int cropY;
+@property(nonatomic, readonly) int cropWidth;
+@property(nonatomic, readonly) int cropHeight;
 
 + (NSSet<NSNumber *> *)supportedPixelFormats;
 
@@ -83,18 +93,23 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)requiresCropping;
 - (BOOL)requiresScalingToWidth:(int)width height:(int)height;
 - (int)bufferSizeForCroppingAndScalingToWidth:(int)width height:(int)height;
+
 /** The minimum size of the |tmpBuffer| must be the number of bytes returned from the
  * bufferSizeForCroppingAndScalingToWidth:height: method.
+ * If that size is 0, the |tmpBuffer| may be nil.
  */
-- (BOOL)cropAndScaleTo:(CVPixelBufferRef)outputPixelBuffer withTempBuffer:(uint8_t *)tmpBuffer;
+- (BOOL)cropAndScaleTo:(CVPixelBufferRef)outputPixelBuffer
+        withTempBuffer:(nullable uint8_t *)tmpBuffer;
 
 @end
 
 /** RTCI420Buffer implements the RTCI420Buffer protocol */
+CYBCALL_EXPORT
 @interface RTCI420Buffer : NSObject <RTCI420Buffer>
 @end
 
 /** Mutable version of RTCI420Buffer */
+CYBCALL_EXPORT
 @interface RTCMutableI420Buffer : RTCI420Buffer <RTCMutableI420Buffer>
 @end
 

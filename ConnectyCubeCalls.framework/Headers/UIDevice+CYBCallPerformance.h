@@ -7,6 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
+CYBCALL_EXPORT
 @interface UIDevice (CYBCallPerformance)
 
 /**

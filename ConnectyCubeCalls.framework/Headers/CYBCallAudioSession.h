@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 @class CYBCallAudioSession;
 @class CYBCallAudioSessionConfiguration;
 
@@ -31,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallAudioSessionDelegate protocol.
  Notifying about important audio session events.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioSessionDelegate)
 @protocol CYBCallAudioSessionDelegate <NSObject>
 
@@ -105,6 +108,7 @@ NS_SWIFT_NAME(CallAudioSessionDelegate)
  activation state has changed outside of CYBCallAudioSession. The current known use
  case of this is when CallKit activates the audio session for the application
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioSessionActivationDelegate)
 @protocol CYBCallAudioSessionActivationDelegate <NSObject>
 
@@ -129,6 +133,7 @@ NS_SWIFT_NAME(CallAudioSessionActivationDelegate)
  CYBCallAudioSession class interface.
  This class is used to manage and configure audio session of web rtc including sound route management.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioSession)
 @interface CYBCallAudioSession : NSObject <CYBCallAudioSessionActivationDelegate>
 

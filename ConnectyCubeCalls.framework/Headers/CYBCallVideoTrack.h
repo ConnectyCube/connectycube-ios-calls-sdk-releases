@@ -6,6 +6,7 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallMediaStreamTrack.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallVideoTrack class interface.
  This class represents remote audio track.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallVideoTrack)
 @interface CYBCallVideoTrack : CYBCallMediaStreamTrack
 

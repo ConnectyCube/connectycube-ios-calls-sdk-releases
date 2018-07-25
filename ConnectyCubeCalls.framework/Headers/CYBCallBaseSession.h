@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallMediaStream;
 @class CYBCallAudioTrack;
@@ -19,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallBaseSession class interface.
  This class represents basic session methods.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallBaseSession)
 @interface CYBCallBaseSession : NSObject
 

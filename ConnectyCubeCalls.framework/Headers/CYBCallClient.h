@@ -6,9 +6,9 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallBaseClient.h>
-
 #import <ConnectyCubeCalls/CYBCallClientDelegate.h>
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallSession;
 
@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallClient class interface.
  Represents client to initialize call session and notify about call's state.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallClient)
 @interface CYBCallClient : CYBCallBaseClient
 

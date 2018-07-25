@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 @class CYBCallLocalAudioTrack;
 @class CYBCallLocalVideoTrack;
 
@@ -18,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @note You can access an instance of this class from CYBCallSession class, localMediaStream property.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallMediaStream)
 @interface CYBCallMediaStream : NSObject
 

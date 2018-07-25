@@ -6,7 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import <ConnectyCubeCalls/CYBCallBaseClientDelegate.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallBaseClient class interface.
  This class represents basic client methods.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallBaseClient)
 @interface CYBCallBaseClient : NSObject
 

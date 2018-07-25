@@ -5,12 +5,14 @@
 //  Copyright © 2018 ConnectyCube. All rights reserved.
 //
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 #import <ConnectyCubeCalls/RTCVideoFrame.h>
 
 /**
  CYBCallVideoFrame class interface.
  This class represents an entity for storing pixel buffer and corresponding information.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallVideoFrame)
 @interface CYBCallVideoFrame : RTCVideoFrame
 

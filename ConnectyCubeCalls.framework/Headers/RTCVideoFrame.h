@@ -12,12 +12,14 @@
 #import <Foundation/Foundation.h>
 
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol RTCVideoFrameBuffer;
 
 // RTCVideoFrame is an ObjectiveC version of webrtc::VideoFrame.
+CYBCALL_EXPORT
 @interface RTCVideoFrame : NSObject
 
 /** Width without rotation applied. */
@@ -36,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) id<RTCVideoFrameBuffer> buffer;
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)new NS_UNAVAILABLE;
+- (instancetype) new NS_UNAVAILABLE;
 
 /** Initialize an RTCVideoFrame from a pixel buffer, rotation, and timestamp.
  *  Deprecated - initialize with a RTCCVPixelBuffer instead
@@ -44,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPixelBuffer:(CVPixelBufferRef)pixelBuffer
                            rotation:(CYBCallVideoRotation)rotation
                         timeStampNs:(int64_t)timeStampNs
-DEPRECATED_MSG_ATTRIBUTE("use initWithBuffer instead");
+    DEPRECATED_MSG_ATTRIBUTE("use initWithBuffer instead");
 
 /** Initialize an RTCVideoFrame from a pixel buffer combined with cropping and
  *  scaling. Cropping will be applied first on the pixel buffer, followed by
@@ -59,7 +61,7 @@ DEPRECATED_MSG_ATTRIBUTE("use initWithBuffer instead");
                               cropY:(int)cropY
                            rotation:(CYBCallVideoRotation)rotation
                         timeStampNs:(int64_t)timeStampNs
-DEPRECATED_MSG_ATTRIBUTE("use initWithBuffer instead");
+    DEPRECATED_MSG_ATTRIBUTE("use initWithBuffer instead");
 
 /** Initialize an RTCVideoFrame from a frame buffer, rotation, and timestamp.
  */

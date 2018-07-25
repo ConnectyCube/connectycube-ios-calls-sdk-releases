@@ -5,6 +5,10 @@
 //  Copyright © 2018 ConnectyCube. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 @class CYBCallSession;
 
 @protocol CYBCallBaseClientDelegate;
@@ -16,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @note All delegate methods will be called on main thread due to webrtc restrictions.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallClientDelegate)
 @protocol CYBCallClientDelegate <CYBCallBaseClientDelegate>
 

@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 typedef NS_ENUM(NSUInteger, CYBCallAudioCodec) {
     
     CYBCallAudioCodecOpus,
@@ -38,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @remark Default media stream configuration available with [CYBCallConfig mediaStreamConfiguration]. You can instantiate defaulConfiguration, change and then apply with [CYBCallConfig setMediaStreamConfiguration:].
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallMediaStreamConfiguration)
 @interface CYBCallMediaStreamConfiguration : NSObject <NSCoding>
 

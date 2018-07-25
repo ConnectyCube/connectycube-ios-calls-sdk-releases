@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 @class RTCVideoFrame;
 @class CYBCallLocalVideoTrack;
 
@@ -16,6 +18,7 @@
  
  @see CYBCallCameraCapture for sending frames from native camera.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallVideoCapture)
 @interface CYBCallVideoCapture : NSObject
 

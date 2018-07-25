@@ -6,6 +6,7 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallVideoCapture.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
@@ -21,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see CYBCallVideoCapture
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallCameraCapture)
 @interface CYBCallCameraCapture : CYBCallVideoCapture
 

@@ -9,14 +9,15 @@
  */
 
 #import <Foundation/Foundation.h>
-#if TARGET_OS_IPHONE
-#import <UIKit/UIKit.h>
-#endif
+#import <CoreGraphics/CoreGraphics.h>
+
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class RTCVideoFrame;
 
+CYBCALL_EXPORT
 @protocol RTCVideoRenderer <NSObject>
 
 /** The size of the frame. */

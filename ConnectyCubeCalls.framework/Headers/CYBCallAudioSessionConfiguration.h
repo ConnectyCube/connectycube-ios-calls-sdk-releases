@@ -8,8 +8,11 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallAudioSessionConfiguration)
 @interface CYBCallAudioSessionConfiguration : NSObject
 

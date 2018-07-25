@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallBaseSession;
 @class CYBCallStatsReport;
@@ -19,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Base client protocol.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallBaseClientDelegate)
 @protocol CYBCallBaseClientDelegate <NSObject>
 

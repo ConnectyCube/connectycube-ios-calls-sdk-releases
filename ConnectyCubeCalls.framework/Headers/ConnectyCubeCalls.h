@@ -19,6 +19,7 @@
 #import <ConnectyCubeCalls/CYBCallIceServer.h>
 #import <ConnectyCubeCalls/CYBCallLocalAudioTrack.h>
 #import <ConnectyCubeCalls/CYBCallLocalVideoTrack.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 #import <ConnectyCubeCalls/CYBCallMediaStream.h>
 #import <ConnectyCubeCalls/CYBCallMediaStreamConfiguration.h>
 #import <ConnectyCubeCalls/CYBCallMediaStreamTrack.h>
@@ -46,8 +47,8 @@
 #import <ConnectyCubeCalls/CYBCallConferenceClientDelegate.h>
 #import <ConnectyCubeCalls/CYBCallConferenceSession.h>
 
-//! Framework version 1.0
+//! Framework version 1.1
 FOUNDATION_EXPORT NSString * const ConnectyCubeCallsFrameworkVersion;
 
-//! WebRTC revision 22222
+//! WebRTC revision 23978
 FOUNDATION_EXPORT NSString * const ConnectyCubeCallsRevision;

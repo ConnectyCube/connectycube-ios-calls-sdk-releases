@@ -6,8 +6,8 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallBaseClientDelegate.h>
-
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallConferenceSession;
 
@@ -18,6 +18,7 @@
 
  @see CYBCallConferenceClient, https://connectycube.com/pricing/
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallConferenceClientDelegate)
 @protocol CYBCallConferenceClientDelegate <CYBCallBaseClientDelegate>
 

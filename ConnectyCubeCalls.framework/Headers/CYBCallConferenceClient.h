@@ -9,6 +9,7 @@
 
 #import <ConnectyCubeCalls/CYBCallConferenceClientDelegate.h>
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 @class CYBCallConferenceSession;
 
@@ -22,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see CYBCallConfig, https://connectycube.com/pricing/
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallConferenceClient)
 @interface CYBCallConferenceClient : CYBCallBaseClient
 

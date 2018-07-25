@@ -7,12 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ConnectyCubeCalls/CYBCallMacros.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  CYBCallMediaStreamTrack class interface.
  Base class to describe class with media information.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallMediaStreamTrack)
 @interface CYBCallMediaStreamTrack : NSObject
 

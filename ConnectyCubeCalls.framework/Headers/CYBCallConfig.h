@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import <ConnectyCubeCalls/CYBCallTypes.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,8 +19,16 @@ NS_ASSUME_NONNULL_BEGIN
  CYBCallConfig class interface.
  This class represents configuration of all possible ConnectyCubeCalls settings.
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallConfig)
 @interface CYBCallConfig : NSObject
+
+/**
+ Determines whether framework is running from broadcast extension.
+ 
+ @discussion Set this to YES if you are using framework from within broadcast extension.
+ */
+@property (class, nonatomic, getter=isBroadcastExtension) BOOL broadcastExtension;
 
 - (instancetype)init NS_UNAVAILABLE;
 

@@ -6,6 +6,7 @@
 //
 
 #import <ConnectyCubeCalls/CYBCallBaseSession.h>
+#import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @see https://connectycube.com/pricing/
  */
+CYBCALL_EXPORT
 NS_SWIFT_NAME(CallConferenceSession)
 @interface CYBCallConferenceSession : CYBCallBaseSession
 
