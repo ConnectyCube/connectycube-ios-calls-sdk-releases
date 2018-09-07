@@ -4,6 +4,14 @@ This repository contains releases of the iOS Calls SDK. It provides a simple int
 
 If you have any questions, comments, or issues related to any products distributed via this repository then please raise an issue here on GitHub repository or contact the team by emailing support@connectycube.com.
 
+# ConnectyCube SDK
+
+This repository contains releases of the iOS SDK for interacting with the ConnectyCube communications cloud.
+
+It provides a simple interface to the video calling (WebRTC) capabilities provided by the platform. 
+
+[Getting Started with ConnectyCube iOS SDK](https://developers.connectycube.com/ios/)
+
 # Installation
 
 The ConnectyCube iOS Calls SDK can be installed directly into your application by adding sdk libraries via CocoaPods.
