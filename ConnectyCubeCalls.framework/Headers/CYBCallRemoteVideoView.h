@@ -42,7 +42,9 @@ NS_SWIFT_NAME(CallRemoteVideoView)
  
  @discussion Using MetalKit always if available which is the best performance wise. Otherwise just using old method by drawing video frames with GLKit.
  
- @remark Default value is YES. This is a class property and will be used by every instance of the class.
+ @remark Default value is NO.
+ 
+ @note Experimental feature. This is a class property and will be used by every instance of the class.
  
  @see https://developer.apple.com/documentation/metalkit
  */

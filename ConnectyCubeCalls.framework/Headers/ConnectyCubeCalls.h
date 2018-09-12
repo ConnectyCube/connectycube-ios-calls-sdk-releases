@@ -47,8 +47,8 @@
 #import <ConnectyCubeCalls/CYBCallConferenceClientDelegate.h>
 #import <ConnectyCubeCalls/CYBCallConferenceSession.h>
 
-//! Framework version 1.1.1
+//! Framework version 1.2
 FOUNDATION_EXPORT NSString * const ConnectyCubeCallsFrameworkVersion;
 
-//! WebRTC revision 23978
+//! WebRTC revision 24701
 FOUNDATION_EXPORT NSString * const ConnectyCubeCallsRevision;

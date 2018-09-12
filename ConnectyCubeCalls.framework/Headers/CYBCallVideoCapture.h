@@ -63,7 +63,14 @@ NS_SWIFT_NAME(CallVideoCapture)
              requested fps. The requested aspect ratio is orientation agnostic and
              will be adjusted to maintain the input orientation, so it doesn't
              matter if e.g. 1280x720 or 720x1280 is requested.
+ 
+ @note This method adapts video source, which is the same for all capturers. Use 'resetOutputFormat' to reset output format requested by calling this method.
  */
 - (void)adaptOutputFormatToWidth:(NSUInteger)width height:(NSUInteger)height fps:(NSUInteger)fps;
+
+/**
+ Used to reset output format, requested with 'adaptOutputFormatToWidth:height:fps:' method.
+ */
+- (void)resetOutputFormat;
 
 @end

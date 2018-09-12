@@ -9,6 +9,7 @@
  */
 
 #import <AVFoundation/AVFoundation.h>
+
 #import <ConnectyCubeCalls/CYBCallMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,6 +28,7 @@ CYBCALL_EXPORT
 @end
 
 /** Protocol for RTCVideoFrameBuffers containing YUV planar data. */
+CYBCALL_EXPORT
 @protocol RTCYUVPlanarBuffer <RTCVideoFrameBuffer>
 
 @property(nonatomic, readonly) int chromaWidth;
@@ -53,6 +55,7 @@ CYBCALL_EXPORT
 @end
 
 /** Extension of the YUV planar data buffer with mutable data access */
+CYBCALL_EXPORT
 @protocol RTCMutableYUVPlanarBuffer <RTCYUVPlanarBuffer>
 
 @property(nonatomic, readonly) uint8_t *mutableDataY;
@@ -62,10 +65,12 @@ CYBCALL_EXPORT
 @end
 
 /** Protocol for RTCYUVPlanarBuffers containing I420 data */
+CYBCALL_EXPORT
 @protocol RTCI420Buffer <RTCYUVPlanarBuffer>
 @end
 
 /** Extension of the I420 buffer with mutable data access */
+CYBCALL_EXPORT
 @protocol RTCMutableI420Buffer <RTCI420Buffer, RTCMutableYUVPlanarBuffer>
 @end
 
